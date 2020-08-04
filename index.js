@@ -9,8 +9,8 @@ window.createInjectionScript = () => {
   fetch('injection-template.js')
     .then(response => response.text())
     .then(code => {
-      const encoded = btoa(bookReport);
-      const injectionCode = `bookReport = atob("${encoded}");\n` + code;
+      const encoded = btoa(encodeURIComponent(bookReport));
+      const injectionCode = `bookReport = decodeURIComponent(atob("${encoded}"));\n` + code;
       const injectionScriptElem = document.getElementById("injectionscript");
       injectionScriptElem.value = injectionCode;
     });
