@@ -1,0 +1,22 @@
+{
+  "name": "paste-to-reading-ssem",
+  "version": "1.0.0",
+  "description": "Pasting to reading.ssem.or.kr made easy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sohnryang/paste-to-reading-ssem.git"
+  },
+  "author": "sohnryang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sohnryang/paste-to-reading-ssem/issues"
+  },
+  "homepage": "https://github.com/sohnryang/paste-to-reading-ssem#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
